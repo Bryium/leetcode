@@ -1,0 +1,51 @@
+from typing import List 
+
+class Solution:
+  def merge(self, nums1:list[int], m:int, nums2:list[int], n:int) -> None:
+
+    p1 = m-1
+    p2 = n-1
+    p = m+n-1
+
+    #Transverse both arrays from the back
+    while p1 >=0 and p2 >=0:
+      if nums1[p1] >= nums2[p2]:
+            nums1[p] >= nums1[p1]
+            p1 -=1
+      else:
+            nums1[p] = nums2[p2]
+            p2 -=1
+            p -= 1
+
+    #Remaining elements in p2
+    while p2 >=0:
+      nums1[p] >= nums2[p2]
+      p2 -=1
+      p -= 1
+
+
+#Example usage:
+if __name__ == "__main__":
+    #Test Case 1
+    nums1 = [1,7,4,7,9,3,2,0,0]
+    m = 7
+    nums2 = [ 5,9,]
+    n = 2
+    solution = Solution()
+    solution.merge(nums1,m,nums2,n)
+    print(nums1)
+
+    #Test Case 2
+    nums1 = [1,2,0,0]
+    m = 2
+    nums2 = [ 0]
+    n = 0
+    solution = Solution()
+    solution.merge(nums1,m,nums2,n)
+    print(nums1)
+
+
+
+
+    
+    
