@@ -9,8 +9,8 @@ class Solution(object):
     #Iterate over the array 
     for num in nums:
       if count == 0:
-          candidate = num # set the new candidate
-      count += (1 if num == candidate else -1)  # Increent or decrement the count 
+          candidate = num 
+      count += (1 if num == candidate else -1)  
 
     return candidate
   
@@ -30,18 +30,4 @@ if __name__ == "__main__":
    result2 = solution.majorityElement(nums2)
    print(f"majority element in {nums2} is: {result2}")
 
-# for older version sof python 
 
-# Example usage
-# if __name__ == "__main__":
-#     solution = Solution()
-
-#     # Test case 1
-#     nums1 = [3, 2, 3]
-#     result1 = solution.majorityElement(nums1)
-#     print("Majority element in " + str(nums1) + " is: " + str(result1))
-
-#     # Test case 2
-#     nums2 = [2, 2, 1, 1, 2, 2]
-#     result2 = solution.majorityElement(nums2)
-#     print("Majority element in " + str(nums2) + " is: " + str(result2))
