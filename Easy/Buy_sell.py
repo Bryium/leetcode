@@ -2,41 +2,29 @@
 
 
 class Solution(object):
-  def maxProfit(self, prices):
+  def maxProfit(self,prices):
+    min_price = float('inf')
+    max_profit = 0
 
-    #initialize variables
-    min_price = float("inf") # set intial minimum price to infinity
-    max_profit =0 # set initial max profit to 0
-
-    #lopp through the prices
     for price in prices:
-      #update min_price if a lower price is found
       if price < min_price:
-        min_price = price
-
-      #calculate potenetial profit and update max_profit if it's higher
+        min_price = price 
       elif price - min_price > max_profit:
         max_profit = price - min_price
 
-    return max_profit # return maximum profit found
-  
+    return max_profit
 
-# Example usage
+#Example usage
 if __name__ == "__main__":
   solution = Solution()
 
-  # Example 1
-  prices = [7,1,5,3,6,4]
-  profit = solution.maxProfit(prices)
-  print(profit)
+  #example 1
+  num1 = [1,2,3,4,5]
+  maximum_profit  = solution.maxProfit(num1)
+  print(maximum_profit) 
 
+  #example 2
+  num2 = [3,5,6,7,8,9]
+  maximum_profit  = solution.maxProfit(num2)
+  print(maximum_profit) 
 
-  # Example 2
-  prices = [7,6,4,3,2,1]
-  profit = solution.maxProfit(prices)
-  print(profit)
-
-  # Example 3
-  prices = [8,3,4,3,2,1]
-  profit = solution.maxProfit(prices)
-  print(profit)
