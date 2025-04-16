@@ -1,27 +1,24 @@
 class Solution(object):
   def maxProfit(self, prices):
 
-    profit = 0
+    max_profit = 0
+
     for i in range(1, len(prices)):
-      if prices[i] > prices[i-1]: #If today's price is higher than yesterday's
-        profit += prices[i] - prices[i-1] # Capture the difference as profit 
-
-    return profit
+      if  prices[i] > prices[i-1]:
+        max_profit += prices[i] - prices[i-1]
+    return max_profit
   
-#Example usage
-if __name__ == "__main__":
-  solution = Solution()
+#Example Usage 
+if __name__ ==  "__main__":
+  solution  =  Solution()
 
-  #Example 1
-  prices = [7,1,5,3,6,4]
-  profit = solution.maxProfit(prices)
-  print(profit)
+  #example 1
+  price1 = [1,2,3,4,5]
+  maximum_profit = solution.maxProfit(price1)   
+  print(maximum_profit)
 
-  #Example 2
-  prices = [1,2,3,4,5]
-  profit = solution.maxProfit(prices)
-  print(profit)
+  #example 1
+  price2 = [7,6,4,3,1]
+  maximum_profit = solution.maxProfit(price2)   
+  print(maximum_profit)
 
-  #Example 3
-  prices = [7,6,4,3,1]
-  print(solution.maxProfit(prices))
