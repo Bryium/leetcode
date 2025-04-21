@@ -7,7 +7,7 @@ class Solution(object):
     current_end = 0
     farthest = 0
 
-    for i in range(i- n):
+    for i in range(n-1):
       farthest = max(farthest, i + nums[i])
 
       if i == current_end:
@@ -15,3 +15,22 @@ class Solution(object):
         current_end = farthest
 
     return jumps
+
+#Example usage
+if __name__ == "__main__":
+  solution = Solution()
+
+  #Example 1
+  nums1 = [2,3,1,1,4]
+  jump = solution.jump(nums1)
+  print(jump) 
+
+  #Example 2
+  nums2 = [3,2,1,0,4]
+  jump = solution.jump(nums2)
+  print(jump) 
+
+  #Example 3
+  nums3 = [2,0,2,0,1]
+  jump = solution.jump(nums3)
+  print(jump)
