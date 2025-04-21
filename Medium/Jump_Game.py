@@ -1,31 +1,35 @@
 class Solution(object):
   def canJump(self, nums):
+    
+    farthest = 0
 
-    max_reach = 0 
     for i in range(len(nums)):
-      if i > max_reach:
+      if i > farthest:
         return False
-      max_reach = max(max_reach, i + nums[i])
-      if max_reach >= len(nums)- 1:
-          return True
-    return False
-  
+      farthest = max(farthest, i + nums[i])
 
-#Example Usage
+    return True
+  
+#Example usage
 if __name__ == "__main__":
-  solution = Solution()
+  Solution = Solution()
 
   #Example 1
   nums = [2,3,1,1,4]
-  jump = solution.canJump(nums)
-  print(jump)
+  can_Jump = Solution.canJump(nums)
+  print(can_Jump) 
 
-  #Example 2
-  nums = [4,5,6,1,0,4]
-  jump = solution.canJump(nums)
-  print(jump)
+   #Example 2
+  nums = [3, 2, 1, 0, 4]
+  can_Jump = Solution.canJump(nums)
+  print(can_Jump) 
 
    #Example 3
-  nums = [3,2,1,0,4]
-  jump = solution.canJump(nums)
-  print(jump)
+  nums = [2, 0, 2, 0, 1]
+  can_Jump = Solution.canJump(nums)
+  print(can_Jump) 
+
+  #Example 4
+  nums = [2, 4, 0, 1, 0, 2, 0]
+  can_Jump = Solution.canJump(nums)
+  print(can_Jump) 
