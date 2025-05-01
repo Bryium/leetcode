@@ -1,18 +1,14 @@
 class Solution(object):
   def hIndex(self, citations):
+    citations.sort(reverse=True)
+    h = 0
 
-    citations.sort(reverse=True) #sort citations in descending order
-    h_index = 0
-
-    for i, citation in enumerate(citations):
-      if citation >= i + 1:
-        h_index = i + 1 #update h-iindex
-
+    for i, c in enumerate(citations):
+      if c >= i + 1:
+        h = i + 1
       else:
-        break # stop when the condition is met
-
-
-    return h_index
+        break
+    return h
   
 
 # Example Usage
