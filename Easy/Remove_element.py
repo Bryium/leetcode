@@ -1,3 +1,5 @@
+# This problem is all about removing a specific value from an array in-place, without using extra space.
+
 from typing import List
 
 class Solution(object):
