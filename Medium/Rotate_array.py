@@ -1,3 +1,6 @@
+# This problem is all about rotating an array k times to the right — shifting elements toward the right and wrapping around the end back to the start.
+
+
 class Solution():
   def rotate(self,nums,k):
     
