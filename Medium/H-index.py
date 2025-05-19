@@ -1,3 +1,8 @@
+# You have an array called citations.
+# Each element citations[i] tells you how many times the researcher’s ith paper has been cited.
+# Your goal is to find the h-index, which means:
+# The highest number h such that the researcher has at least h papers with h or more citations.
+
 class Solution(object):
   def hIndex(self, citations):
     citations.sort(reverse=True)

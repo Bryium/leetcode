@@ -1,3 +1,9 @@
+# You're standing at the first index in an array called nums.
+# Each number in nums[i] tells you the maximum jump length from that position.
+ # Your goal is to reach the last index using the minimum number of jumps.
+
+
+
 class Solution(object):
   def jump(self, nums):
 
