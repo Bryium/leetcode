@@ -1,3 +1,5 @@
+# Design a data structure that supports inserting, removing, and randomly returning elements—all in average constant time.
+
 import random
 
 class RandomizedSet(object):
