@@ -1,9 +1,11 @@
+# This problem is about modifying a sorted array in-place so that each element appears at most twice, while keeping their original order.
+
 class Solution():
   def removeDuplicates(self, nums):
     if len(nums) <= 2:
       return len(nums)
     
-    k = 2 #unique element
+    k = 2 #unique element 
 
     for i in range(2, len(nums)):
       if nums[i] != nums[k - 2]:
