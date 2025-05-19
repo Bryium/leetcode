@@ -1,3 +1,5 @@
+# Distribute candies to children so that each child has at least one candy and children with higher ratings than their neighbors get more candies, while minimizing the total candies given.
+
 class Solution(object):
   def candy(self, ratings):
 
