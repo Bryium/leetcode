@@ -1,3 +1,5 @@
+# This problem is all about finding the majority element — the one that appears more than n / 2 times in an array.
+
 class Solution(object):
   def majorityElement(self, nums):
 
