@@ -1,3 +1,5 @@
+# This problem is all about finding the maximum possible profit by buying the stock on one day and selling it on a future day. 
+
 class Solution(object):
   def maxProfit(self, prices):
 
