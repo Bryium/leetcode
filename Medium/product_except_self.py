@@ -1,3 +1,5 @@
+# Return an array where each element is the product of all other elements in the input array except itself, without using division and in linear time.
+
 class Solution(object):
   def productExceptSelf(self,nums):
 
