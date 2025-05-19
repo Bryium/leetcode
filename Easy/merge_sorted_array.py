@@ -1,3 +1,5 @@
+# This problem is all about merging two sorted arrays into one sorted array.
+
 from typing import List 
 
 class Solution:
