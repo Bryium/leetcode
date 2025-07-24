@@ -32,4 +32,9 @@ if __name__ == "__main__":
    result2 = solution.majorityElement(nums2)
    print(f"majority element in {nums2} is: {result2}")
 
+   # Test Case 3
+   nums3 = [1,4,5,6,7,1,1,1,1]
+   result3 = solution.majorityElement(nums3)
+   print(f"majority element in {nums3}  is: {result3}")
+
 
