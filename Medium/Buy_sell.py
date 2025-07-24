@@ -19,8 +19,13 @@ if __name__ ==  "__main__":
   maximum_profit = solution.maxProfit(price1)   
   print(maximum_profit)
 
-  #example 1
+  #example 3
   price2 = [7,6,4,3,1]
   maximum_profit = solution.maxProfit(price2)   
+  print(maximum_profit)
+
+  #example 3
+  price3 = [7,1,5,3,6,4]
+  maximum_profit= solution.maxProfit(price3)
   print(maximum_profit)
 
