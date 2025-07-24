@@ -8,7 +8,7 @@ class Solution(object):
 
     for price in prices:
       if price < min_price:
-        min_price = price 
+        min_price = price
       elif price - min_price > max_profit:
         max_profit = price - min_price
 
@@ -27,4 +27,9 @@ if __name__ == "__main__":
   num2 = [3,5,6,7,8,9]
   maximum_profit  = solution.maxProfit(num2)
   print(maximum_profit) 
+
+  #example 3
+  nums3 = [7,6,3,2,1]
+  maximum_profit = solution.maxProfit(nums3)
+  print(maximum_profit)
 
