@@ -11,7 +11,7 @@ class Solution:
 
     #Transverse both arrays from the back
     while p1 >=0 and p2 >=0:
-      if nums1[p1] >= nums2[p2]:
+      if nums1[p1] > nums2[p2]:
             nums1[p] = nums1[p1]
             p1 -=1
       else:
@@ -29,19 +29,19 @@ class Solution:
 #Example usage:
 if __name__ == "__main__":
     #Test Case 1
-    nums1 = [1,7,4,7,9,3,2,0,0]
-    m = 7
-    nums2 = [ 5,9,]
-    n = 2
+    nums1 = [1]
+    m = 1
+    nums2 = []
+    n = 0
     solution = Solution()
     solution.merge(nums1,m,nums2,n)
     print(nums1)
 
     #Test Case 2
-    nums1 = [1,2,0,0]
-    m = 2
-    nums2 = [ 0]
-    n = 0
+    nums1 = [0]
+    m = 0
+    nums2 = [1]
+    n = 1
     solution = Solution()
     solution.merge(nums1,m,nums2,n)
     print(nums1)
