@@ -1,3 +1,5 @@
+# Finding the most maximum difference between two elements in an array such that the larger element appears after the smaller element.
+
 def maxprofit(prices):
   
   left = 0
