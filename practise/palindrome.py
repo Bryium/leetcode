@@ -1,4 +1,4 @@
-def is_Palindorme(s: str) -> bool:
+def is_Palindorome(s: str) -> bool:
 
   left = 0
   right = len(s) - 1
@@ -14,8 +14,10 @@ def is_Palindorme(s: str) -> bool:
 #Example usage:
 if __name__ == "__main__":
   s1 = "racecar"
-  print(is_Palindorme(s1))  
+  print(is_Palindorome(s1))  
 
   s2 = "hello"
-  print(is_Palindorme(s2)) 
+  print(is_Palindorome(s2)) 
   
+  s3 = "madam"
+  print(is_Palindorome(s3))
