@@ -55,6 +55,15 @@ if __name__ == "__main__":
     solution.merge(nums1,m,nums2,n)
     print(nums1)
 
+    #Test case 4
+    nums1 = [1,2,3,5,7,8,0,0,0]
+    m = 6
+    nums2 = [2,5,6]
+    n = 3 
+    solution = Solution()
+    solution.merge(nums1,m,nums2,n)
+    print(nums1)
+
 
 
 
