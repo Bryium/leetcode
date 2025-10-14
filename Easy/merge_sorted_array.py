@@ -64,6 +64,15 @@ if __name__ == "__main__":
     solution.merge(nums1,m,nums2,n)
     print(nums1)
 
+    #Test case 5
+    nums1 = [34,67,76,78,94,0,0,0,0]
+    m = 5
+    nums2 = [20,30,45,70]
+    n = 4
+    solution = Solution()
+    solution.merge(nums1,m,nums2,n)
+    print(nums1)
+
 
 
 
