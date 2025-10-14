@@ -29,3 +29,10 @@ if __name__=="__main__":
    k2 = solution.removeElement(nums2, val2)
    print("\nNumber of Elements not equal to val:", k2)
    print("Modified nums:" , nums2[:k2])
+
+   # Example 3
+   nums3 = [1]
+   val3 = 1
+   k3 = solution.removeElement(nums3, val3)
+   print("\nNumber of Elements not equal to val:", k3)
+   print("Modified nums:" , nums3[:k3])  
