@@ -26,4 +26,11 @@ if __name__ == "__main__":
   print("Number of unique elements:", k)
   print("Unique elements:", nums[:k])
 
+  #Example 2
+  nums = [0,0,1,1,1,2,2,3,3,4]
+  k = solution.removeDuplicates(nums)   
+
+  print("Number of unique elements:", k)
+  print("Unique elements:", nums[:k])
+
   
