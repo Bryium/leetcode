@@ -1,4 +1,4 @@
-# This problem is all about finding the majority element — the one that appears more than n / 2 times in an array.
+# This problem is all about finding the majority element — the one that appears more than n / 2 times in an array. (Booyer-Moore Majority Vote Algorithm)
 
 class Solution(object):
   def majorityElement(self, nums):
@@ -36,5 +36,10 @@ if __name__ == "__main__":
    nums3 = [1,4,5,6,7,1,1,1,1]
    result3 = solution.majorityElement(nums3)
    print(f"majority element in {nums3}  is: {result3}")
+
+   # Test Case 4
+   nums4  = [6,5,5,5,5,4,4,4,4,4,4,4]
+   result4 = solution.majorityElement(nums4)
+   print(f"majority element in { nums4} is: {result4}")
 
 
