@@ -29,3 +29,9 @@ if __name__ == "__main__":
   k = 2
   solution.rotate(nums,k)
   print(nums) 
+
+  # Test Case 3
+  nums = [1,2]
+  k = 3
+  solution.rotate(nums,k)
+  print(nums)
