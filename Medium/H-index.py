@@ -36,5 +36,9 @@ if __name__ == "__main__":
   citations = [0, 0, 0, 0]
   print(solution.hIndex(citations))  
 
+  # Example 5 
+  citations = [25, 8, 5, 3, 3]
+  print(solution.hIndex(citations))
+
 
   
