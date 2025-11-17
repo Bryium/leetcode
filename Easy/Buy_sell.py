@@ -1,4 +1,5 @@
 # this problem is all about finding the maximum possible profit by buying the stock and selling it on the future day 
+# The algorithm sed here is single-pass Greedy Algorithm
 
 
 class Solution(object):
