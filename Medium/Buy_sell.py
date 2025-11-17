@@ -1,4 +1,5 @@
-# This problem is all about finding the maximum possible profit by buying the stock on one day and selling it on a future day. 
+# This problem is all about finding the maximum possible profit by buying the stock on one day and selling it on a future day.
+# The algorithm used here is a single-pass Greedy Algorithm.
 
 class Solution(object):
   def maxProfit(self, prices):
