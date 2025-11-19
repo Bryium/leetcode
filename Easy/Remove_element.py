@@ -1,4 +1,6 @@
 # This problem is all about removing a specific value from an array in-place, without using extra space.
+# The algorithm used here is the Two-Pointer Technique.
+# The time complexity is O(n) and the space complexity is O(1).
 
 from typing import List
 
