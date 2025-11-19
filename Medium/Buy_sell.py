@@ -1,5 +1,6 @@
 # This problem is all about finding the maximum possible profit by buying the stock on one day and selling it on a future day.
 # The algorithm used here is a single-pass Greedy Algorithm.
+# The time complexity and space complexity are O(n) and O(1) respectively.
 
 class Solution(object):
   def maxProfit(self, prices):
