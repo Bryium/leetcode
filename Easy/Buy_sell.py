@@ -1,5 +1,6 @@
 # this problem is all about finding the maximum possible profit by buying the stock and selling it on the future day 
 # The algorithm sed here is single-pass Greedy Algorithm
+#  Time complexity and space complexity is O(n) and O(1) respectively
 
 
 class Solution(object):
