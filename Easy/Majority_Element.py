@@ -1,4 +1,7 @@
-# This problem is all about finding the majority element — the one that appears more than n / 2 times in an array. (Booyer-Moore Majority Vote Algorithm)
+# This problem is all about finding the majority element — the one that appears more than n / 2 times in an array. 
+# The algorithm used here is (Booyer-Moore Majority Vote Algorithm)
+# Time: O(n) (one scan)
+# Space: O(1) (constant extra memory)
 
 class Solution(object):
   def majorityElement(self, nums):

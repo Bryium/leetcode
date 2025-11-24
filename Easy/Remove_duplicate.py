@@ -1,4 +1,6 @@
 # This problem is all about removing duplicates from a sorted array in-place, while preserving the original order of unique elements.
+# The algorithm used here is the Two-Pointer Technique.
+# The time complexity is O(n) and the space complexity is O(1).
 
 class Solution:
   def removeDuplicates(self,nums):
@@ -30,6 +32,14 @@ if __name__ == "__main__":
   nums = [0,0,1,1,1,2,2,3,3,4]
   solution = Solution()
   k = solution.removeDuplicates(nums)   
+
+  print("Number of unique elements:", k)
+  print("Unique elements:", nums[:k])
+
+  #Example 3
+  nums = [1,1,1,1,1,3,3,3,3,3,3,3,4,4,4,5,5,5,5]
+  solution = Solution()
+  k = solution.removeDuplicates(nums)
 
   print("Number of unique elements:", k)
   print("Unique elements:", nums[:k])
