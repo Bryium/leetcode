@@ -1,4 +1,7 @@
 # This problem is all about merging two sorted arrays into one sorted array.
+# The algorthm used here is two-pointer technique
+# Time Complexity: O(m+n) each element from both arrays is processed once
+# Space Complexity: O(1) no need for extra space as we are modifying nums1 in place
 
 from typing import List 
 
