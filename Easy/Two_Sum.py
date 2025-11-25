@@ -31,3 +31,9 @@ if __name__ == "__main__":
     target2 = 6
     result2 = solution.twoSum(nums2, target2)
     print(result2)  
+
+    #Example 3
+    nums3 = [3, 3, 4, 2, 6, 9]
+    target3 = 6
+    result3 = solution.twoSum(nums3, target3)
+    print(result3)
