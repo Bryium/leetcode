@@ -1,4 +1,8 @@
 # Add two numbers represented by linked lists in reverse order and return the sum as a linked list.
+# Each node contains a single digit.
+# Time Complexity: O(max(m, n)) where m and n are the lengths of the two lists
+# Space Complexity: O(max(m, n)) for the output list
+# The algorithm used here is Iteration through both linked lists while managing carry for sums exceeding 9.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val

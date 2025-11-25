@@ -1,4 +1,7 @@
 # Design a data structure that supports inserting, removing, and randomly returning elements—all in average constant time.
+# The algorithm used here is Combination of a list and a hash map to achieve O(1) time complexity for all operations.
+# Time Complexity: O(1) for insert, remove, and getRandom operations
+# Space Complexity: O(n) for storing elements in the data structure
 
 import random
 
