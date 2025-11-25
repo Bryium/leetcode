@@ -1,4 +1,7 @@
 # This problem is about Finding two numbers in the list whose sum equals the target and return their indices.
+# The algorithm used here is Hash Map for constant time look-up.
+# Time Complexity: O(n) we traverse the list only once  
+# Space Complexity: O(n) for storing elements in the hash map
 
 class Solution(object):
     def twoSum(self, nums, target):
