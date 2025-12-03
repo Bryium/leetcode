@@ -2,6 +2,9 @@
 # Each element citations[i] tells you how many times the researcher’s ith paper has been cited.
 # Your goal is to find the h-index, which means:
 # The highest number h such that the researcher has at least h papers with h or more citations.
+# The algorithm used here is greedy approach after sorting the citations in descending order.
+# Time Complexity: O(n log n) due to sorting the citations
+# Space complexity is O(1) space (best case)
 
 class Solution(object):
   def hIndex(self, citations):
