@@ -36,3 +36,8 @@ if __name__ ==  "__main__":
   maximum_profit = solution.maxProfit(price4) 
   print(maximum_profit)
 
+  #example 5
+  price5 = [3,3,5,0,0,3,1,4]
+  maximum_profit = solution.maxProfit(price5) 
+  print(maximum_profit)
+
