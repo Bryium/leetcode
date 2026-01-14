@@ -1,4 +1,6 @@
 # This problem is about modifying a sorted array in-place so that each element appears at most twice, while keeping their original order.
+# The algorithm used here is the Two-Pointer Technique.
+# The time complexity is O(n) and the space complexity is O(1).
 
 class Solution():
   def removeDuplicates(self, nums):

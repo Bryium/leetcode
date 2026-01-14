@@ -5,12 +5,15 @@
 class Solution(object):
   def maxProfit(self, prices):
 
-    max_profit = 0
+    maximum_profit = 0
 
     for i in range(1, len(prices)):
-      if  prices[i] > prices[i-1]:
-        max_profit += prices[i] - prices[i-1]
-    return max_profit
+      if prices  [i] > prices[i - 1]:
+        maximum_profit  += prices [i] - prices[i - 1]
+
+    return maximum_profit 
+
+
   
 #Example Usage 
 if __name__ ==  "__main__":
