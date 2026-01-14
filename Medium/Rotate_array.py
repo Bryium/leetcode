@@ -1,4 +1,6 @@
 # This problem is all about rotating an array k times to the right — shifting elements toward the right and wrapping around the end back to the start.
+# The algorithm used here is the Reverse Technique.
+# The time complexity is O(n) and the space complexity is O(1).
 
 
 class Solution():
