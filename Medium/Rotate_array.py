@@ -37,3 +37,9 @@ if __name__ == "__main__":
   k = 3
   solution.rotate(nums,k)
   print(nums)
+
+  #Tetst Case 4
+  nums = [1,2,3]
+  k=5
+  solution.rotate(nums,k)
+  print(nums)
