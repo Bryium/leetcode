@@ -1,4 +1,6 @@
 # You're standing at the first position in an array called nums. Each element in nums tells you the maximum number of steps you can jump forward from that position.
+# The algorithm used here is a single-pass Greedy Algorithm.
+# The time complexity and space complexity are O(n) and O(1) respectively.
 
 class Solution(object):
   def canJump(self, nums):
