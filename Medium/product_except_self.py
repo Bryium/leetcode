@@ -1,4 +1,6 @@
 # Return an array where each element is the product of all other elements in the input array except itself, without using division and in linear time.
+# The algorithm used here is the Prefix and Suffix Product Technique.
+# The time complexity is O(n) and the space complexity is O(1).
 
 class Solution(object):
   def productExceptSelf(self,nums):
@@ -36,6 +38,11 @@ if __name__ =="__main__":
   nums = [5,6,3,9,8]
   product = solution.productExceptSelf(nums)
   print(product) 
+
+  #Example 4
+  nums = [1,2,3,4,5,6,7,8,9,10]
+  product = solution.productExceptSelf(nums)
+  print(product)
 
 
 

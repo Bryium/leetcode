@@ -1,26 +1,30 @@
 # You're standing at the first index in an array called nums.
+# The algorithm used here is a single-pass Greedy Algorithm.
+# The time complexity and space complexity are O(n) and O(1) respectively.
 # Each number in nums[i] tells you the maximum jump length from that position.
  # Your goal is to reach the last index using the minimum number of jumps.
 
 
 
 class Solution(object):
-  def jump(self, nums):
+    def jump(self, nums):
 
-    n = len(nums)
+        n = len(nums)
 
-    jumps = 0
-    current_end = 0
-    farthest = 0
+        jumps = 0
+        current_end = 0
+        farthest = 0
 
-    for i in range(n-1):
-      farthest = max(farthest, i + nums[i])
+        for i in range(n - 1):
+            farthest = max(farthest, i + nums[i])
 
-      if i == current_end:
-        jumps += 1
-        current_end = farthest
+            if i == current_end:
+                jumps += 1
+                current_end = farthest
 
-    return jumps
+        return jumps
+
+
 
 #Example usage
 if __name__ == "__main__":
