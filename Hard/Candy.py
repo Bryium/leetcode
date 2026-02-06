@@ -1,4 +1,7 @@
 # Distribute candies to children so that each child has at least one candy and children with higher ratings than their neighbors get more candies, while minimizing the total candies given.
+# Time Complexity: O(n) where n is the number of children
+# Space Complexity: O(n) where n is the number of children
+# The algorithm used here is a two-pass approach to ensure that each child has at least one candy and children with higher ratings than their neighbors get more candies.
 
 class Solution(object):
   def candy(self, ratings):
@@ -32,5 +35,10 @@ if __name__ == "__main__":
 
   #Example 3
   ratings = [1, 3, 4, 5, 2]
+  result = solution.candy(ratings)
+  print(result) 
+
+  #Example 4
+  ratings = [1,3,2,1]
   result = solution.candy(ratings)
   print(result) 

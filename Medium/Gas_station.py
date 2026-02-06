@@ -24,8 +24,8 @@ if __name__ =="__main__":
     solution = Solution()
 
     #Example 1
-    gas = [1,2,3,4,5]
-    cost = [2,3,4,5,1]
+    gas = [4,5,7,9,]
+    cost= [4,5,3,2]
     start_station = solution.canCompleteCircuit(gas,cost)
     print(start_station) 
 
