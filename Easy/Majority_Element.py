@@ -6,18 +6,23 @@
 class Solution(object):
   def majorityElement(self, nums):
 
-    #Initialize the candidate and count 
-
+  #Initialize count and candidate
     candidate = None
-    count = 0
+    count  = 0
 
-    #Iterate over the array 
+  
+    #Iterate over the array
     for num in nums:
       if count == 0:
-          candidate = num 
-      count += (1 if num == candidate else -1)  
+        candidate = nums
+      count += (1 if num == candidate else -1)
+    
+    return candidate 
 
-    return candidate
+
+  
+  
+
   
 
 #  Example usage 

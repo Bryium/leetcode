@@ -7,18 +7,19 @@ class Solution(object):
   def candy(self, ratings):
 
     n = len(ratings)
-    candies = [1] * n
+    candies = [1] * n 
 
     for i in range(1, n):
-      if ratings [i] >  ratings [ i -1]:
-        candies[i] = candies[i -1] + 1
+      if  ratings [i] > ratings [i -1]:
+        candies[i] =  candies[i-1] + 1
 
-    for i in range(n-2, -1, -1):
-        if ratings [i] > ratings [ i + 1]:
-          candies[ i ] = max(candies[i], candies[i +1] + 1)
+    for i in range(n-2,-1,-1):
+      if ratings[i] > ratings [i+1]:
+        candies[i] = max(candies[i], candies[i+1] +1)
 
     return sum(candies)
-  
+    
+    
 #Example usage
 if __name__ == "__main__":
   solution = Solution()
@@ -42,3 +43,8 @@ if __name__ == "__main__":
   ratings = [1,3,2,1]
   result = solution.candy(ratings)
   print(result) 
+
+  #Example 5 
+  ratings = [5,3,6,3,6,7,10,4]
+  result = solution.candy(ratings)
+  print(result)

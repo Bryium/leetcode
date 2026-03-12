@@ -35,4 +35,10 @@ if __name__ == "__main__":
   result = solution.trap(height)
   print(result)  
 
+  #Example 3
+  height = [3,0,2,0,4]
+  result = solution.trap(height)
+  print(result)
+
+
 

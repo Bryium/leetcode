@@ -21,3 +21,6 @@ if __name__ == "__main__":
   
   s3 = "madam"
   print(is_Palindorome(s3))
+
+  s4 = "A man, a plan, a canal: Panama"
+  print(is_Palindorome(s4))
