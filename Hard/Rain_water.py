@@ -1,4 +1,8 @@
-# Rain water problem 42
+# Rain water problem: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+# Time Complexity: O(n) where n is the number of bars in the elevation map  
+# Space Complexity: O(1) as we are using only a constant amount of extra space for pointers and variables
+# The algorithm uses two pointers to traverse the elevation map from both ends towards the center, calculating
+
 
 class Solution(object):
   def trap(self, height):
