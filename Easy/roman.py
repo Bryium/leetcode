@@ -40,3 +40,8 @@ if __name__ == "__main__":
     s = "MCMXCIV"
     result = solution.romanToInt(s)
     print(result)
+
+    #Example 4
+    s = "MCM"
+    result = solution.romanToInt(s)
+    print(result)
