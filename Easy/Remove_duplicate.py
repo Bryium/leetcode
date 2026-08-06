@@ -8,7 +8,7 @@ class Solution:
     if not nums:
       return 0
     
-    k = 1 #unique element
+    k = 1 #unique element, where the next number should be placed. It starts 1 because if the list is non-empty, the first element is automatically unique.
 
     for i in range(1, len(nums)):
          if nums[i] != nums[i -1]:

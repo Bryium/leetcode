@@ -14,15 +14,10 @@ class Solution(object):
     #Iterate over the array
     for num in nums:
       if count == 0:
-        candidate = nums
+        candidate = num
       count += (1 if num == candidate else -1)
     
     return candidate 
-
-
-  
-  
-
   
 
 #  Example usage 
