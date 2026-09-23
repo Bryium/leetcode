@@ -4,7 +4,7 @@
 
 
 class Solution():
-  def rotate(self,nums,k):
+  def rotate(self,nums, k):
     
     n = len(nums)
 
@@ -30,7 +30,8 @@ if __name__ == "__main__":
   nums = [-1,-100,3,99]
   k = 2
   solution.rotate(nums,k)
-  print(nums) 
+  print(nums)
+ 
 
   # Test Case 3
   nums = [1,2]

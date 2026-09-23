@@ -10,6 +10,7 @@ class Solution(object):
         seen = set()
         left = 0
         max_length = 0
+    
 
         for right in range(len(s)):
             while s[right] in seen:

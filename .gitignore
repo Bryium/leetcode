@@ -3,3 +3,9 @@
 .env
 
 env/
+
+# AI tutor files (Codex + Claude Code), kept local
+AGENTS.md
+CLAUDE.md
+CLAUDE_COORDINATION.md
+LEARNING_LOG.md
