@@ -1,3 +1,9 @@
+## Longest Substring Without Repeating Characters
+## Time complexity: O(n) where n is the length of the string.
+## Space complexity: O(min(n, m)) where m is the size of the character set.
+## the algorithm uses a sliding window approach with a set to keep track of characters in the current window.
+
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
