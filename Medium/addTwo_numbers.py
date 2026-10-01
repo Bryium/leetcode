@@ -2,7 +2,7 @@
 # Each node contains a single digit.
 # Time Complexity: O(max(m, n)) where m and n are the lengths of the two lists
 # Space Complexity: O(max(m, n)) for the output list
-# The algorithm used here is Iteration through both linked lists while managing carry for sums exceeding 9.
+# The algorithm is digit-by-digit addition with carry, implemented by iterating through two linked lists.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val

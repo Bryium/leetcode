@@ -6,16 +6,14 @@
 class Solution(object):
     def twoSum(self, nums, target):
 
-      seen = {}
+        seen = {}
 
-      for i, num in enumerate(nums):
-        complement = target - num
+        for i, num in enumerate(nums):
+            compliment = target - num 
 
-        if complement in seen:
-          return [seen[complement], i]
-
-        seen[num] = i
-
+            if compliment in seen:
+                return (seen[compliment], i)
+            seen[num] = i
 # Example usage
 if __name__ == "__main__":
     solution = Solution()
