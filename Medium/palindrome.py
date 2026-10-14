@@ -1,3 +1,11 @@
+## This function finds the longest palindromic substring in a given string `s`. 
+## Time complexity: O(n^2) where n is the length of the string.
+## Space complexity: O(1) since we are using a constant amount of space.
+## The algorithm uses a center expansion approach, where we expand around each character (and each pair of characters) to find palindromes.
+
+
+
+
 class Solution:
     def longestPalindrome(self, s):
         best_start = 0
