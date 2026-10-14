@@ -37,3 +37,8 @@ if __name__ == "__main__":
   nums = [2, 4, 0, 1, 0, 2, 0]
   can_Jump = Solution.canJump(nums)
   print(can_Jump) 
+
+
+
+
+  

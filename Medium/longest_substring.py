@@ -14,7 +14,7 @@ class Solution(object):
             return 0
 
         seen = set()
-        left = 0
+        left = 0 
         max_length = 0
     
 
